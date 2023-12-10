@@ -27,6 +27,7 @@ func init() {
 			},
 		},
 		"default":  config.Get("DB_CONNECTION", "postgresql"),
+		"dir":      "./sql",
 		"timezone": carbon.UTC,
 	})
 }

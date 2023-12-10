@@ -1,11 +1,11 @@
 package database
 
 import (
-	"github.com/fwidjaya20/symphonic-skeleton/shared/context"
+	"github.com/futurisen-solution/materia/context"
 	"github.com/labstack/echo/v4"
 )
 
-type TxCallback = func(e echo.Context) error
+type TxCallback = func(c echo.Context) error
 
 func RunInTransaction(c *context.SymphonicContext, callback TxCallback) error {
 	tx := Gorm().Begin()

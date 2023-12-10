@@ -1,8 +1,8 @@
 package config
 
 import (
-	BootstrapEvent "github.com/fwidjaya20/symphonic-skeleton/bootstrap/event"
-	BootstrapSchedule "github.com/fwidjaya20/symphonic-skeleton/bootstrap/schedule"
+	BootstrapEvent "github.com/futurisen-solution/symphonic-skeleton/bootstrap/event"
+	BootstrapSchedule "github.com/futurisen-solution/symphonic-skeleton/bootstrap/schedule"
 	"github.com/fwidjaya20/symphonic/contracts/foundation"
 	"github.com/fwidjaya20/symphonic/database"
 	"github.com/fwidjaya20/symphonic/event"

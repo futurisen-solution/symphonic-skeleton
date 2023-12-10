@@ -4,10 +4,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/fwidjaya20/symphonic-skeleton/app/grpc"
-	"github.com/fwidjaya20/symphonic-skeleton/app/http"
-	"github.com/fwidjaya20/symphonic-skeleton/app/schedule"
-	"github.com/fwidjaya20/symphonic-skeleton/bootstrap"
+	"github.com/futurisen-solution/symphonic-skeleton/app/grpc"
+	"github.com/futurisen-solution/symphonic-skeleton/app/http"
+	"github.com/futurisen-solution/symphonic-skeleton/app/schedule"
+	"github.com/futurisen-solution/symphonic-skeleton/bootstrap"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/fwidjaya20/symphonic-skeleton/bootstrap"
-	"github.com/fwidjaya20/symphonic-skeleton/bootstrap/event"
+	"github.com/futurisen-solution/symphonic-skeleton/bootstrap"
+	"github.com/futurisen-solution/symphonic-skeleton/bootstrap/event"
 	"github.com/fwidjaya20/symphonic/facades"
 )
 
