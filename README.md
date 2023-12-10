@@ -6,7 +6,7 @@
 
 ```shell
 // Download the skeleton
-git clone git@github.com:fwidjaya20/symphonic-skeleton.git [project-name] && rm -rf [project-name]/.git*
+git clone git@github.com:futurisen-solution/symphonic-skeleton.git [project-name] && rm -rf [project-name]/.git*
 
 // Installation dependencies
 cd [project-name] && go mod tidy
