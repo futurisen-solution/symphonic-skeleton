@@ -1,0 +1,28 @@
+version: "3.9"
+name: futurisen
+
+services:
+  SERVICE_NAME:
+    build:
+      context: .
+      dockerfile: docker/app/go/Dockerfile
+      args:
+        SSH_PRIVATE_KEY: "${SSH_PRIVATE_KEY}"
+    container_name: SERVICE_NAME
+    deploy:
+      replicas: 0
+
+  SERVICE_NAME-migration:
+    build:
+      context: .
+      dockerfile: docker/app/migration/Dockerfile
+    container_name: SERVICE_NAME-migration
+    restart: on-failure
+    networks:
+      futurisen:
+        aliases:
+          - SERVICE_NAME-migration
+
+networks:
+  futurisen:
+    name: futurisen

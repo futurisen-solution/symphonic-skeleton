@@ -1,7 +1,6 @@
 package config
 
 import (
-	BootstrapEvent "github.com/futurisen-solution/symphonic-skeleton/bootstrap/event"
 	BootstrapSchedule "github.com/futurisen-solution/symphonic-skeleton/bootstrap/schedule"
 	"github.com/fwidjaya20/symphonic/contracts/foundation"
 	"github.com/fwidjaya20/symphonic/database"
@@ -27,7 +26,6 @@ func init() {
 			&database.ServiceProvider{},
 			&log.ServiceProvider{},
 			&schedule.ServiceProvider{},
-			&BootstrapEvent.ServiceProvider{},
 			&BootstrapSchedule.TaskSchedulerServiceProvider{},
 		},
 		"timezone": carbon.UTC,
